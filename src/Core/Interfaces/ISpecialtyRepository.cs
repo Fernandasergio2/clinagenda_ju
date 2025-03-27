@@ -12,5 +12,7 @@ namespace ClinAgenda.src.Core.Interfaces
         Task<int> InsertSpecialtyAsync(SpecialtyInsertDTO specialtyInsertDTO);
         Task<SpecialtyDTO> GetByIdAsync(int id);
         Task<int> DeleteSpecialtyAsync(int id);
+
+        Task<IEnumerable<SpecialtyDTO>> GetSpecialtiesByIds(List<int> id);
     }
 }
